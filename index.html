@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <h1>algo</h1>
+    </header>
+    <main>
+      <section>
+        <h1>ENVIO DE PRODUCTOS</h1>
+        <form action="index.html" method="post">
+          <div class="form">
+            <div class="products">
+              <label for="cant_products">Cantidad de Productos</label>
+              <select id="list" class="" name="cant_products">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+            <h3>Sobre el Producto</h3>
+            <!-- ACA VA LA LOGICA QUE DEPENDIENDO LA CANTIDAD DE PRODUCTOS, SE REPITAN LOS CAMPOS -->
+              <label for="produ_name">Nombre</label>
+              <input id="produ_name" type="text" name="produ_name" value="">
+              <label for="produ_code">Código</label>
+              <input id="produ_code" type="text" name="produ_code" value="">
+              <label for="produ_stock">Stock</label>
+              <input id="produ_stock" type="text" name="produ_stock" value="">
+              <label for="coments">Comentarios:</label>
+              <textarea id="coments" name="coments" rows="8" cols="80"></textarea>
+            <!--  -->
+            <h3>Quien lo Recibe?</h3>
+            <label for="name">Nombre</label>
+            <input id="name" type="text" name="name" value="" checked>
+            <label for="dni">DNI</label>
+            <input id="dni" type="text" name="dni" value="" checked>
+            <div class="fecha">
+              <h3>Fecha de Entrega</h3>
+              <input type="date" name="" value="">
+            </div>
+          </div>
+          <button id="btn" type="submit">CONTINUAR</button>
+        </form>
+      </section>
+    </main>
+    <script src="Ejercicio3.js"></script>
+  </body>
+</html>
