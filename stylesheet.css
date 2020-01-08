@@ -57,11 +57,10 @@ form textarea{
 }
 button{
   font-family: 'Open Sans', sans-serif;
-  cursor: pointer;
   color: white;
   width: 50%;
   font-weight: bold;
-  background-color: red;
+  background-color: lightgrey;
   border-radius: 25px;
   border: none;
   padding: 15px 60px;
