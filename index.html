@@ -17,7 +17,7 @@
           <div class="form">
             <div class="products">
               <label for="cant_products">Cantidad de Productos</label>
-              <select id="list" class="" name="cant_products">
+              <select id="cant" class="" name="cant_products">
                 <option value="0">0</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -33,7 +33,23 @@
             </div>
             <h3>Sobre el Producto</h3>
             <!-- ACA VA LA LOGICA QUE DEPENDIENDO LA CANTIDAD DE PRODUCTOS, SE REPITAN LOS CAMPOS -->
-              <label for="produ_name">Nombre</label>
+              <div class="products">
+                <label for="cant_products">Cantidad</label>
+                <select id="list" class="" name="cant_products">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <label for="produ_name">Nombre Producto</label>
               <input id="produ_name" type="text" name="produ_name" value="">
               <label for="produ_code">Código</label>
               <input id="produ_code" type="text" name="produ_code" value="">
@@ -49,10 +65,10 @@
             <input id="dni" type="text" name="dni" value="" checked>
             <div class="fecha">
               <h3>Fecha de Entrega</h3>
-              <input type="date" name="" value="">
+              <input id="date" type="date" name="" value="">
             </div>
           </div>
-          <button id="btn" type="submit">CONTINUAR</button>
+          <button id="btn" type="submit" disabled>CONTINUAR</button>
         </form>
       </section>
     </main>

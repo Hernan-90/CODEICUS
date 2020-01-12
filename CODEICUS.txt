@@ -4,7 +4,7 @@ Primero: La funcion espera que el boton con el id "sbmt_btn" sea presionado.
 Segundo: Una vez presionado el "sbmt_btn" se arma un objeto con el método AJAX.
 
 Dentro del objeto vamos a tener las propiedades que nos permiten vincular con la pagina de internet y realizar la consulta con la base de datos
-url: Contiene un string con la URL base de la API y le agregamos mediante un string "/auth/login" para que se redirija a la página de logeo.
+url: Contiene una constante con la URL base de la API y le agregamos mediante un string "/auth/login" para que se redirija a la página de logeo.
 method: definimos mediante que tipo de envio trabaja el pedido. En nuestro caso es por POST.
 timeout: seteamos el tiempo de espera de 5 segundos para la peticion.
 data: es la informacion que enviaremos al servidor.
@@ -13,8 +13,8 @@ beforeSend: Antes de devolvernos el resultado de la autentificación, cambiamos e
 Luego consultamos que no haya un token de sesion, y le asignamos uno en caso de que la información "data" sea valida, y si existe un error abortamos. Si Ya tiene un Token de sesion, lo setea en el Header.
 Para terminar muesra los mensajes de Success o de error. Dependiendo si "data" es correcta en la base de datos o no y Muestra que tipo de error es.
 
-JQUERY y ANGULAR
+Los frameworks utilizados para Javascrit que puedo encontrar son: JQUERY y ANGULAR.
 
-b- El unico error que puedo llegar a notar, es que dentro del beforeSend hay un If sin un Else que permita siga ejecuando el codigo en caso de que esa condicion no se cumpla.
+b- _session_token no se si esta declarada y xhr2 de donde sale? porque no esta en .abort.
 c- Creo que está bien.
 
