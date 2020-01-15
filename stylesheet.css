@@ -8,6 +8,11 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 @media (min-width: 320px) {
+  header{
+    padding: 0px 10px;
+    border-bottom: 3px solid red;
+    margin-bottom: 30px;
+  }
   section {
     display: flex;
     justify-content: center;
