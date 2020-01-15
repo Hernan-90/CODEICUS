@@ -51,6 +51,7 @@ form.addEventListener('change', function(){
   } else {
     btn.style.cursor = "pointer";
     btn.style.backgroundColor = "red";
+
     console.log("true");
   }
 })
@@ -60,7 +61,22 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
   }
 
-  var arrayDatos = ["perros", "gatos", "pajaritos"];
+  function Producto(id, cod, name , stock){
+    this.id = id;
+    this.cod = cod;
+    this.name = name;
+    this.stock = stock;
+  }
+
+  var id = list.value;
+  var cod = produ_code.value;
+  var name = produ_name.value;
+  var stock = produ_stock.value;
+
+  producto = new Producto (id, cod, name , stock);
+
+  var arrayDatos = [];
+  arrayDatos.push(producto);
   console.log(arrayDatos);
   e.preventDefault();
 
